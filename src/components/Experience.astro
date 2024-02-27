@@ -1,0 +1,85 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Agosto 2022 - Febrero 2024",
+    title: "Residente de Obra",
+    company: "NOMA Inmobiliaria S.A.C. (Lima, Perú)",
+    description:
+      "Como Residente de Obra desde agosto de 2022 hasta febrero de 2024, he liderado la ejecución exitosa de dos proyectos de edificios multifamiliares en Limatambo, San Isidro: Cisnes 340 y Cisnes 484. Mis responsabilidades principales incluyeron la gestión integral de contratistas, el control eficiente de recursos, la planificación detallada y supervisión del progreso de la obra, el seguimiento de costos y valorizaciones, así como la garantía de calidad y seguridad en el sitio. Además, desempeñé funciones adicionales como intermediario en contratos, manejo de trámites municipales, obtención de conformidades, gestión de servicios básicos, y elaboración de planos finales. Mi compromiso se reflejó en la entrega oportuna y cumplimiento de estándares de calidad en ambas obras.",
+  },
+  {
+    date: "Febrero 2021 – Mayo 2022",
+    title: "Residente de Obra",
+    company: "Azzurra Constructores S.A.C. – BLU Constructores S.A.C (Lima, Perú)",
+    description:
+      "Como Residente de Obra desde febrero de 2021 hasta mayo de 2022, supervisé el proyecto del Edificio Multifamiliar Dorado 135 en Chacarilla del Estanque, San Borja, Lima. Mis responsabilidades abarcaron la gestión de contratistas y recursos, la planificación y control del avance de la obra, así como la supervisión de costos, valorizaciones y la calidad y seguridad en el sitio. Además, me encargué de la revisión y coordinación de planos de diversas especialidades, la elaboración de informes semanales de progreso y funciones adicionales como la intermediación en contratos, trámites municipales, conformidad de obra y gestión de certificación EDGE. Asimismo, lideré la gestión para la factibilidad de servicios básicos y la elaboración de planos Asbuilt, garantizando la ejecución eficiente y exitosa del proyecto.",
+  },
+  {
+    date: "Mayo 2020 – Enero 2021",
+    title: "Ingeniero de Campo",
+    company: "Azzurra Constructores S.A.C. – BLU Ingenieros S.A.C. (Lima, Perú)",
+    description:
+      "Durante mi período como Ingeniero Campo desde mayo de 2020 hasta enero de 2021, lideré el desarrollo del proyecto del Edificio Multifamiliar Floresta 240 en Chacarilla del Estanque, San Borja, Lima. Mis responsabilidades principales incluyeron la gestión de contratistas y recursos, la elaboración de cronogramas detallados, control de avance y costos, así como la participación activa en la gestión de calidad y seguridad en la obra. Supervisé de cerca los procesos constructivos y revisé meticulosamente los acabados e instalaciones, desde equipos especiales hasta sistemas de audio y redes. Además, me encargué de la elaboración de informes semanales de progreso para mantener una comunicación clara y eficiente sobre el estado del proyecto.",
+  },
+  {
+    date: "Abril 2019 – Marzo 2020",
+    title: "Residente de Obra",
+    company: "Azzurra Constructores S.A.C. – BLU Pacaritambo S.A.C. (Lima, Perú)",
+    description:
+      "Durante mi tiempo como Residente de Obra desde abril de 2019 hasta marzo de 2020, supervisé el desarrollo del proyecto del Edificio Multifamiliar Pacaritambo 281 en Chacarilla del Estanque, San Borja, Lima. Mis responsabilidades principales incluyeron la gestión integral de contratistas y recursos, así como la planificación detallada y control del avance mediante cronogramas y análisis anticipados. Además, me encargué del seguimiento y control de costos y valorizaciones, garantizando siempre los más altos estándares de calidad y seguridad en la obra. Supervisé de cerca los procesos constructivos y coordiné la revisión y compatibilización de planos de diversas especialidades. Además, desempeñé funciones adicionales como intermediario en contratos, trámites municipales, obtención de conformidades, y gestioné la certificación EDGE y la factibilidad de servicios básicos, incluyendo la elaboración de planos Asbuilt para asegurar el éxito integral del proyecto.",
+  },
+  {
+    date: "Marzo 2018 – Marzo 2019",
+    title: "Asistente de Obra",
+    company: "Azzurra Constructores S.A.C. – BLU Ingenieros S.A.C. (Lima, Perú)",
+    description:
+      "Durante mi participación en el proyecto del Edificio Multifamiliar Parque Castilla 333 en Miraflores, Lima, entre 2018 y 2019, desempeñé varias funciones clave. Esto incluyó proporcionar asistencia en el manejo contractual de la obra y apoyar al residente de obra en diversas tareas. Además, me encargué de la gestión, planificación y control general del proyecto, supervisando de cerca el trabajo de las cuadrillas, el suministro de materiales, equipos y herramientas. Realicé un seguimiento meticuloso de los procesos constructivos y aseguré el cumplimiento de los estándares de calidad tanto en los materiales como en el producto final construido. También fui responsable de la liberación de los productos terminados o instalados y elaboré informes semanales de progreso para mantener una comunicación transparente y eficaz sobre el estado de la obra.",
+  },
+  {
+    date: "Junio 2017 – Febrero 2018",
+    title: "Ingeniero de Campo",
+    company: "Azzurra Constructores S.A.C. – BLU Mill S.A.C. (Lima, Perú)",
+    description:
+      "Durante mi participación en el proyecto del Edificio Multifamiliar Aurora II en Miraflores, Lima, entre 2017 y 2018, desempeñé diversas funciones cruciales. Esto incluyó brindar asistencia en el manejo contractual de la obra y apoyar al ingeniero residente en sus labores diarias. Además, me encargué de la gestión, planificación y control general del proyecto, supervisando tanto los procesos constructivos como al personal involucrado. Garanticé el cumplimiento de los estándares de calidad en los materiales y el producto final construido, así como la liberación de productos terminados o instalados. También fui responsable de reportar y elaborar informes semanales de obra, así como de realizar valorizaciones para mantener un seguimiento preciso del avance del proyecto.",
+  },
+  {
+    date: "Octubre 2015 – Junio 2016",
+    title: "Asistente de Residente de Obra",
+    company: "Nexos Comerciales S.A.C. (Lima, Perú)",
+    description:
+      "Durante mi participación en proyectos como el Nuevo Campamento Tambomayo en la Mina Tambomayo, Arequipa, en 2016, y en la producción de módulos prefabricados para el Ministerio de Educación entre 2015 y 2016, asumí una variedad de responsabilidades clave. Esto incluyó brindar asistencia en el manejo contractual de la obra, así como planificar y controlar meticulosamente los procesos constructivos y el personal involucrado. Me encargué de realizar controles exhaustivos de calidad tanto en los materiales como en los productos instalados, asegurando la liberación de los elementos terminados o instalados conforme a los estándares requeridos. Además, elaboré y reporté informes diarios de obra para mantener una comunicación transparente sobre el progreso del proyecto. También llevé a cabo trabajos topográficos utilizando instrumentos como nivel, teodolito y estación total, y supervisé la fabricación de accesorios portantes de los módulos prefabricados en la planta de producción.",
+  },
+  {
+    date: "Mayo 2014 – Junio 2014",
+    title: "Ingeniero de Producción",
+    company: "Distribuidora Norte Pacasmayo S.R.L (Piura, Perú)",
+    description:
+      "Durante mi participación en el proyecto de abastecimiento de concreto a varios proyectos en la zona de Piura, incluida la Nueva planta de cementos Pacasmayo en 2014, desempeñé diversas funciones críticas. Esto incluyó la programación de los ciclos de producción de concreto premezclado, el control minucioso de la producción dentro de la planta de concreto, el manejo efectivo del personal y la supervisión del control de calidad en todas las etapas del proceso. Mi papel fue fundamental para garantizar un suministro de concreto eficiente y de alta calidad para los proyectos en la región de Piura.",
+  },
+  {
+    date: "Marzo 2012 – Abril 2014",
+    title: "Asistente de Campo",
+    company: "MP Arquitectura y Construcción S.A.C. (Chiclayo, Perú)",
+    description:
+      "Durante mi trayectoria, participé en una serie de proyectos de construcción de diversas índoles entre 2012 y 2014, tales como la construcción de tiendas de autos, almacenes, estructuras de soporte para puentes grúa y más. Mis funciones abarcaron diversas áreas cruciales, incluyendo asistencia en el manejo contractual de obra, elaboración de metrados y análisis de costos, así como planificación y control de la ejecución de los proyectos. Me encargué del control de personal obrero y subcontratas, así como de la supervisión de maquinaria pesada para movimientos de tierras. Además, fui responsable de la liberación de partidas realizadas y realicé o supervisé trabajos de topografía utilizando diferentes instrumentos como nivel, teodolito, estación total y GPS. También estuve a cargo de la elaboración de planos de replanteo y de gestionar los pagos de planilla y tareo de personal, asegurando la correcta gestión administrativa y técnica de los proyectos.",
+  },
+  {
+    date: "Diciembre 2011 – Marzo 2012",
+    title: "Asistente de Campo",
+    company: "CONSORCIO DHMONT & CG & M SAC (Chiclayo, Perú)",
+    description:
+      "Durante mi participación en el proyecto de construcción de Edificios Multifamiliares con Muros de Ductilidad Limitada (MDL) en la Residencial El Jockey entre 2011 y 2012, desempeñé un papel fundamental. Mis responsabilidades incluyeron asistir en el manejo contractual de la obra, especialmente en la partida de acero, así como la elaboración de metrados y la programación de actividades junto con el requerimiento de materiales. Además, me encargué del control del personal obrero especializado en acero y brindé apoyo en trabajos topográficos utilizando instrumentos como nivel y teodolito. También participé en la elaboración de planos de replanteo, asegurando la precisión y la correcta ejecución de los trabajos en el sitio de construcción.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

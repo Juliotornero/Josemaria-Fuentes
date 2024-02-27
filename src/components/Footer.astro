@@ -1,0 +1,36 @@
+---
+const currentYear = new Date().getFullYear()
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+import WhatsAppIcon from "@/components/icons/whatsapp.astro"
+---
+
+<footer
+  class="rounded-lg shadow m-4 pr-4 pl-4 bg-black/5 dark:bg-white/10 dark:shadow-white/20 backdrop-blur-lg w-full mx-auto container lg:max-w-5xl md:max-w-2xl mb-10 flex justify-center"
+>
+  <div
+    class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4 px-4 md:px-0"
+  >
+    <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90"
+      >© {currentYear}
+      <a href="https://www.linkedin.com/in/jfuentesl/" class="hover:underline">Josemaría Fuentes</a>. Todos los derechos Reservados
+    </span>
+    
+    <nav class="flex flex-wrap gap-2 items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0">
+      <SocialPill href="mailto:j.fuentesl@hotmail.com">
+        <MailIcon class="size-4" />
+        Contáctame
+      </SocialPill>
+      <SocialPill href="https://www.linkedin.com/in/jfuentesl/">
+        <LinkedInIcon class="size-4" />
+        LinkedIn
+      </SocialPill>
+      <SocialPill href="https://www.wa.link/t8lbm4">
+        <WhatsAppIcon class="size-4" />
+        WhatsApp
+      </SocialPill>
+    </nav>
+  </div>
+</footer>
